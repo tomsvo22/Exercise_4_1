@@ -1,5 +1,5 @@
 /****************************************************************************************
-* Create a 500 × 500 single channel uchar image with every pixel equal to zero.
+* Create a 500 Ã— 500 single channel uchar image with every pixel equal to zero.
 * a.)Create an ASCII numeric typewriter where you can type numbers into your
 *    computer and have the number show up in a 20 - pixel - high by 10 - pixel - wide
 *    block.As you type, the numbers will display from left to right until you hit the
