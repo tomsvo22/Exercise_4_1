@@ -178,14 +178,14 @@ void colouringDigits(const cv::Mat& image);
 int main(void) {
 
 
-	//Create an array for a 8 bit 500 width and 500 height image filled with 0s
-	cv::Mat img = cv::Mat::zeros(500, 500, CV_8UC1);
+    //Create an array for a 8 bit 500 width and 500 height image filled with 0s
+    cv::Mat img = cv::Mat::zeros(500, 500, CV_8UC1);
     
     //img.clone() for cursor handling
     cv::Mat disp;
 
-	cv::namedWindow("Press ESC to exit", cv::WINDOW_AUTOSIZE);
-	//cv::imshow("Press ESC to exit", img);
+    cv::namedWindow("Press ESC to exit", cv::WINDOW_AUTOSIZE);
+    //cv::imshow("Press ESC to exit", img);
 
     //Define cursor
     unsigned char cursor[20][10] = {
@@ -258,8 +258,8 @@ int main(void) {
     } while (true);
 
 
-	cv::destroyAllWindows();
-	
+    cv::destroyAllWindows();
+    
 }
 
 void drawDigit(cv::Mat& image, int value, unsigned* startX, unsigned* startY) {
@@ -288,7 +288,7 @@ void drawDigit(cv::Mat& image, int value, unsigned* startX, unsigned* startY) {
 
         cv::Rect location(*startX, *startY, 10, 20);
 
-        //image(location).copyTo(digit);
+        //image(location).copyTo(digit)
         digit.copyTo(image(location));
 
         *startX += 10;
